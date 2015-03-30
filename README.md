@@ -1,0 +1,3 @@
+# MyBashRC
+My .bashrc configurations etc.
+Version controlling my configuration files...
