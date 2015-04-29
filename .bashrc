@@ -145,3 +145,6 @@ alias gpom='git push origin master'
 # ----------------------
 # Git log find by commit message
 function glf() { git log --all --grep="$1"; }
+
+#Short cut to connect to mysql
+alias myconnect='mysql --user=root --password'
