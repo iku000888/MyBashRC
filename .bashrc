@@ -118,11 +118,18 @@ fi
 # ----------------------
 alias ga='git add'
 alias gaa='git add .'
+
+#use this to split up what is to be committed in a file.
+alias gap='git add --patch'
+
 alias gaaa='git add -A'
 alias gb='git branch'
 alias gbd='git branch -d '
 alias gc='git commit'
 alias gcm='git commit -m'
+
+#this will open up editor and show what is committed
+alias gcv='git commit -v'
 alias gco='git checkout'
 alias gcob='git checkout -b'
 alias gcom='git checkout master'
