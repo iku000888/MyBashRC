@@ -41,4 +41,5 @@ syntax on
 :noremap K kkkkk
 :noremap L lllll 
 
-"
+"repeat the last command entered.
+:map <F2> <Esc>:<up><CR>
