@@ -1,3 +1,5 @@
+"please take a look at my vimrc file
+
 :set nu
 :set tabstop=3
 :set shiftwidth=3
@@ -41,5 +43,21 @@ syntax on
 :noremap K kkkkk
 :noremap L lllll 
 
-"repeat the last command entered.
+"execute the command that was executed last time.
 :map <F2> <Esc>:<up><CR>
+
+"This opens an empty scratch buffer to the left of the current screen.
+"In human readable form, the following gets executed:
+":badd<space>scratch<CR> add a buffuer named scrach
+":vert<space>sbNext<CR> split the window with the newly created scratch buffer
+":setlocal<space>buftype=nofile<CR> set so that qutting on this buffer will not prompt for saving.
+":setlocal<space>bufhidden=hide<CR> 
+":setlocal<space>noswapfile<CR> no spap files are created.
+:map <F3> :badd<space>scratch<CR>:vert<space>sbNext<CR>:setlocal<space>buftype=nofile<CR>:setlocal<space>bufhidden=hide<CR>:setlocal<space>noswapfile<CR>
+
+"This moves the cursor to the end of the current file,
+"and then opens :r ! waiting for a command.
+"This is to conveniently run external programs without 
+"switchng terminals.
+"do not attempt to open vim from this, as it will make the program stop.
+:map <F4> G$:r<space>!
