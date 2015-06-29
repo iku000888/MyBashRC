@@ -6,10 +6,15 @@
 :set expandtab
 syntax on
 
+"map the frequently used :wq command
+:map wq :wq<CR>
+
 "The space bar under normal mode does nothing, so make full use of it
 :map <space>q :q<CR>
 :map <space>g :!git<space>
 :map <space>w :w<CR>
+:map <space><space> bve
+:map <space><space><space> V 
 
 "Make buffer manipulation more friendly.
 :map <space>b :badd<space>
